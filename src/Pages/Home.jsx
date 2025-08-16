@@ -13,7 +13,7 @@ const Home = () => {
    <Header />
    <div className='relative w-[1527px] h-[783px]'>
     
-    <img src="public\Gemini_Generated_Image_7gvnu87gvnu87gvn.png" alt='Bg' className='absolute -z-5 w-full h-full object-fill'/>
+    <img src="/bg.png" alt='Bg' className='absolute -z-5 w-full h-full object-fill'/>
     
     <div className="absolute inset-0  bg-black opacity-75 blur-[0.5px] -z-5 "></div>
    <motion.h1 initial={{opacity:0}} animate={{opacity:1}} transition={{duration:4}} className="absolute text-[54px] top-45 left-25 font-bold text-white bg-transparent">Completed Watching The Movie</motion.h1>
