@@ -47,7 +47,7 @@ useEffect(() => {
     const movieToSearch = "Avatar"; // Default movie
 
     try {
-      const res = await fetch(`https://movierecommender-backend-ea5m.onrender.com/recommend?movie=${encodeURIComponent(movieToSearch)}`);
+      const res = await fetch(`https://movierecommender-backend-production.up.railway.app/recommend?movie=${encodeURIComponent(movieToSearch)}`);
       const data = await res.json();
 
       if (data.recommendations) {
@@ -133,7 +133,7 @@ useEffect(() => {
   const movieToSearch = searchQuery || suggestions[0];
 
   try {
-    const res = await fetch(`https://movierecommender-backend-ea5m.onrender.com/recommend?movie=${encodeURIComponent(movieToSearch)}`);
+    const res = await fetch(`https://movierecommender-backend-production.up.railway.app/recommend?movie=${encodeURIComponent(movieToSearch)}`);
     const data = await res.json();
 
     if (data.recommendations) {
